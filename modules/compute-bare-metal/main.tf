@@ -14,6 +14,8 @@ resource "ibm_compute_bare_metal" "host" {
   unbonded_network       = true
   public_vlan_id         = var.public_vlan
   private_vlan_id        = var.private_vlan
+  public_subnet          = var.public_subnet
+  private_subnet         = var.private_subnet
   tags                   = var.tags
   redundant_power_supply = true
   storage_groups {
