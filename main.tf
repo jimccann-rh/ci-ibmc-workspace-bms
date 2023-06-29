@@ -74,7 +74,7 @@ module "bare-metal-hosts" {
   domain_name  = var.domain_name
   public_vlan  = var.bms_public_vlan
   public_subnet  = var.bms_public_subnet
-  private_vlan = var.bms_private_vlan
+  private_vlan   = var.bms_private_vlan
   private_subnet  = var.bms_private_subnet
   tags         = local.tags
 }
