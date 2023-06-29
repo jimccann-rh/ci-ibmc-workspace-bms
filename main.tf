@@ -51,19 +51,19 @@ resource "ibm_compute_ssh_key" "project" {
 #  datacenter             = var.datacenter
 #}
 
-resource "ibm_subnet" "management_subnet" {
-  type       = "Portable"
-  private    = true
-  ip_version = 4
-  capacity   = 64
-  vlan_id    = var.bms_private_vlan 
-  notes      = "vsphere management"
-  tags       = local.tags
-
-  timeouts {
-    create = "45m"
-  }
-}
+#resource "ibm_subnet" "management_subnet" {
+#  type       = "Portable"
+#  private    = true
+#  ip_version = 4
+#  capacity   = 64
+#  vlan_id    = var.bms_private_vlan 
+#  notes      = "vsphere management"
+#  tags       = local.tags
+#
+#  timeouts {
+#    create = "45m"
+#  }
+#}
 
 
 module "bare-metal-hosts" {
