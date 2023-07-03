@@ -31,9 +31,10 @@
 
 resource "ibm_compute_bare_metal" "quote_ci" {
   # Mandatory fields
-  hostname    = var.name
-  domain      = var.domain_name
-  datacenter  = var.datacenter
+  hostname      = var.name
+  domain        = var.domain_name
+  datacenter    = var.datacenter
+  network_speed = var.network_speed
   quote_id = 3012755
 
   # Optional fields
