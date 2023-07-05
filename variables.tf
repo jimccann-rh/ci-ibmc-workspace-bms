@@ -63,5 +63,4 @@ variable "quote_id" {
   description = "quote id of a order to be placed"
   type        = string
   default     = ""
-
-
+}
