@@ -35,7 +35,7 @@ resource "ibm_compute_bare_metal" "quote_ci" {
   domain        = var.domain_name
   datacenter    = var.datacenter
   network_speed = var.network_speed
-  quote_id = 3012755
+  quote_id = var.quote_id
 
   # Optional fields
 
